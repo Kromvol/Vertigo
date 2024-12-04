@@ -1,0 +1,56 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css">
+	<title>Cleaning service</title>
+</head>
+
+<body>
+<form>
+<div>
+	<div>
+		<p>Комнат:</p>
+		<input type="text" name="date"  id="room"/>
+	</div>
+	<div>
+		<p>Площадь квартиры:</p>
+		<input type="text" name="plos" id="vol"/>
+	</div>
+</div>
+<div>
+	<div>
+		<input type="checkbox" id="load" name="mess"/>
+		<label for="load">Мытье окон</label>
+	</div>
+	<div>
+		<input type="checkbox" id="del" name="mess"/>
+		<label for="del">Мытье унитаза</label>
+	</div>
+	<div>
+		<input type="checkbox" id="frag" name="mess"/>
+		<label for="frag">Полная уборка</label>
+	</div>
+</div>
+	<div>
+	<select id="time">
+		<option value="fast">Срочно</option>
+		<option value="nofast">Не Срочно</option>
+	</select>
+	<p>Комментарий к заказу:<Br>
+	<textarea name="comment" cols="30" rows="2"></textarea></p>
+  	</div>
+	<div><span id="out">0</span> <span>RUB:</span></div>
+	<div>
+		<div>
+			<input type="button" name="adress" id="btn"  value="Рассчитать стоимость"/>
+			<input type="submit" value="Отправить запрос">
+		</div>
+	</div>
+</form>
+
+	<script src="script.js"></script>
+</body>
+</html>
